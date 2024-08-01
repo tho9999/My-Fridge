@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" type="module"></script>
+    </head>
+    <body>
+        
+        <div>
+            <header>
+                <h1 id="banner"> My Fridge </h1>
+            </header>
+        </div>
+        <main class="info">
+            <div class="locations">
+                <aside id="locationPanel">
+                    <h1 id="locationsText"> Locations </h1>
+                    <div id="addLocation">
+                        <button id="addLocationBtn"> Add location </button>
+                        <input type="text" placeholder="Location" id="locationName">
+                    </div>
+                    <div>
+                        <ul id="locationList"></ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="inventory">
+                <div>
+                    <h1 id="inventoryText"> My Inventory</h1>
+                </div>
+                <div id = "itemInputText">
+                    <p id = "itemInputNameText"> Item Name </p>
+                    <p id = "itemExpiryText"> Expiry Date </p>
+                    <p id = "itemQuantityText"> Quantity </p>
+                </div>
+                <div id="itemInputs">
+                    <input type="text" id="itemName" placeholder="Item Name">
+                    <input type="date" id="itemExpiryDate">
+                    <input type="number" id="itemQuantity" placeholder="0">
+                    <button id="addItemBtn"> Add item </button>
+                </div>
+                <div id="sortBtns">
+                    <button id="sortByNameAToZBtn"> Sort by name A-Z</button>
+                    <button id="sortByNameZToABtn"> Sort by name Z-A</button>
+                    <button id="sortByExpiryBtn"> Sort by expiring items </button>
+                    <button id="sortByQuantityBtn"> Sort by most quantity </button>
+                </div>
+                <ul id="inventoryItemsList"></ul>
+            </div>
+        </main>
+    </body>
+</html>

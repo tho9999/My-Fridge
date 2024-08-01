@@ -1,0 +1,279 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(226, 208, 208);
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+
+#banner {
+    text-align: center;
+    text-shadow: 1px 2px #e9e6e5;
+    color: #375f74;
+    background-color:rgb(226, 208, 208);
+    padding: 15px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px #375f74;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info {
+    display: flex;
+    text-shadow: 1px 0px #e9e6e5;
+    color: #375f74;
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif 
+}
+
+#locationsText{
+    text-shadow: 1px 1px #e9e6e5;
+    font-size: 40px;
+}
+
+#locationPanel {
+    height: 100%;
+    width: 550px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 5px #375f74;
+    background-image: url("./images/woodBackground.jpg");
+}
+
+#addLocationBtn {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #c9cbda;
+}
+
+#addLocationBtn:hover {
+    background-color: #69a1b1;
+    cursor: pointer;
+}
+
+#locationName {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#locationList{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#locationList li{
+    background-color: #c9cbda;
+    padding: 10px 100px;
+    border-radius: 5px;
+    border: 2px solid #375f74;
+    min-height: 40px;
+    line-height: 20px;
+    width: 180px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+#locationList li:hover{
+    background-color: #96df99;
+}
+
+#locationNameText{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#removeLocationBtn{
+    margin-top: 10px;
+    background-color: #efff09;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#removeLocationBtn:hover{
+    background-color: red;
+}
+
+.inventory{
+    margin: 0px auto;
+    box-shadow: 0 2px 5px #375f74;
+    width: 60%;
+    height: max-content;
+    background-image: url("./images/woodBackground.jpg");
+}
+
+#inventoryText{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 10px;
+}
+
+#itemInputText{
+    display: flex;
+    flex-direction: row;
+}
+
+#itemInputNameText{
+    font-size: 25px;
+    margin:0px 0px 0px 120px;
+}
+
+#itemExpiryText{
+    font-size: 25px;
+    margin:0px 0px 0px 170px;
+}
+
+#itemQuantityText{
+    font-size: 25px;
+    margin:0px 0px 0px 190px;
+}
+
+#itemInputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#itemInputs input {
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#addItemBtn{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #c9cbda;
+    cursor: pointer;
+}
+
+#addItemBtn:hover{
+    background-color: #69a1b1;
+}
+
+#sortBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#sortBtns button{
+    padding: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #d4e490;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+#sortBtns button:hover{
+    background-color: #69a1b1;
+}
+
+.itemBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #c9cbda;
+    border: 1px solid #375f74;
+    border-radius: 5px;
+    max-width: 960px;
+}
+
+
+.itemNameText{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.itemPropertyText button{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #d4e490;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.itemPropertyText button:hover{
+    background-color: #69a1b1;
+}
+
+.itemBox .removeItemBtn{
+    background-color: #efff09;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.itemBox .removeItemBtn:hover{
+    background-color: red;
+}
+
+.expiredItemBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: red;
+    border: 1px solid #375f74;
+    border-radius: 5px;
+    max-width: 960px;
+}
+
+.expiredItemBox .removeItemBtn{
+    background-color: #efff09;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.expiredItemBox .removeItemBtn:hover{
+    background-color: red;
+}
