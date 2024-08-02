@@ -226,6 +226,9 @@ addItemBtn.addEventListener("click", function(){
     get(locationRef).then((snapshot) => {
         if (snapshot.exists()) {
             const currentLocationObject = snapshot.val();
+            if(currentLocationObject.items == null){
+                currentLocationObject.items = [];
+            }
             const itemKeys = Object.keys(currentLocationObject.items);
             for(let i = 0; i < currentLocationObject.quantityOfItems; i++){
                 console.log(currentLocationObject.items[itemKeys[i]].name)
