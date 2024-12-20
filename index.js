@@ -517,9 +517,7 @@ sortQuantityBtn.addEventListener("click", function(){
 //      DONE - sort items
 //      DONE - check for expired items
 //      DONE - update quantity of expired items
-// 8. Update daily the quantity of expired items in the location
-// 9. Notify the user when an item is expired
-// 12. Make easy mobile friendly
+
 
 //Problems
 // DONE 1. When adding items location changes
@@ -527,6 +525,5 @@ sortQuantityBtn.addEventListener("click", function(){
 // DONE 3. Remove location doesnt work
 // DONE 4. Counting a expired item doesnt work
 // DONE 5. Removing expired items doensnt update the quantity of expired items in location
-// Can add same location name
 // 6. Check Expiry doesnt actually work every 24hrs
 // DONE 7. name duplicate check doesnt work
