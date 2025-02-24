@@ -131,22 +131,23 @@ ul, li {
 
 #itemInputText{
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
+    margin-right: 270px;
 }
 
 #itemInputNameText{
     font-size: 25px;
-    margin:0px 0px 0px 120px;
+
 }
 
 #itemExpiryText{
     font-size: 25px;
-    margin:0px 0px 0px 170px;
+
 }
 
 #itemQuantityText{
     font-size: 25px;
-    margin:0px 0px 0px 190px;
 }
 
 #itemInputs{
